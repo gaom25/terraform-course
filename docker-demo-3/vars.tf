@@ -1,5 +1,5 @@
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "us-east-1"
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
@@ -17,7 +17,7 @@ variable "ECS_INSTANCE_TYPE" {
 variable "ECS_AMIS" {
   type = map(string)
   default = {
-    us-east-1 = "ami-1924770e"
+    us-east-1 = "ami-09d2c35d7664ddd48"
     us-west-2 = "ami-56ed4936"
     eu-west-1 = "ami-c8337dbb"
   }
@@ -39,6 +39,6 @@ variable "INSTANCE_DEVICE_NAME" {
 }
 
 variable "JENKINS_VERSION" {
-  default = "2.204.1"
+  default = "2.289.3"
 }
 
